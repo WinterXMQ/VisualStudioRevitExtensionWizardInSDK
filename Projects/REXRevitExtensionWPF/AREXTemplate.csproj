@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{$REXNewProjectGUID$}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>REX.$safeprojectname$</RootNamespace>
+    <AssemblyName>AREXTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;$REXCompillationConditionsDefines$;$(AssemblyName)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$REXCompillationConditionsDefines$;$(AssemblyName)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autodesk.Common.AResourcesControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ff3304d4f320ee59, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKN$references\Autodesk.Common.AResourcesControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.REX.Framework, Version=2018.0.0.0, Culture=neutral, PublicKeyToken=51e16e3b26b42eda, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKN$references\Autodesk.REX.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ROHTMLLib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\Interop\Interop.ROHTMLLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="RevitAPI, Version=2018.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI, Version=2018.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AREXRevitStart, Version=2018.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\Revit\AREXRevitStart.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="REX.Controls, Version=2018.0.0.0, Culture=neutral, PublicKeyToken=3b894695c7edfd21, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\Engine\REX.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="REX.Controls.WPF, Version=2018.0.0.0, Culture=neutral, PublicKeyToken=2b9b96ae0916362f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\Engine\REX.Controls.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="REX.Foundation, Version=2018.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\REX.Foundation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="REX.Foundation.WPF, Version=2018.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\REX.Foundation.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="REX.ApplicationServices, Version=2018.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$REXSDKQ$ref\REX.ApplicationServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Presentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module\Application.cs" />
+    <Compile Include="Module\DirectRevitAccess.cs" />
+    <Compile Include="Module\Foundation.cs" />
+    <Compile Include="Main\Data.cs" />
+    <Compile Include="Main\Revit\ExtensionRevit.cs" />
+    <Compile Include="Main\ASD\ExtensionASD.cs" />
+    <Compile Include="Main\Robot\ExtensionRobot.cs" />
+    <Compile Include="Main\Civil3D\ExtensionCivil3D.cs" />
+    <Compile Include="Main\Extension.cs" />
+    <Compile Include="Main\Settings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Dialogs\MainControl.xaml.cs">
+      <DependentUpon>MainControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Dialogs\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Dialogs\SubControl.xaml.cs">
+      <DependentUpon>SubControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Dialogs\UserControlView.xaml.cs">
+      <DependentUpon>UserControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Strings\Texts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Texts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Results.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings\Texts.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Texts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Other\Images\TOOLBAR_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Other\Images\TOOLBAR_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Additional\AREXSetup.vdproj" />
+    <None Include="Additional\AREXStart\AREXStart.csproj" />
+    <None Include="Additional\AREXStart\app.config" />
+    <None Include="Additional\AREXStart\Program.cs" />
+    <None Include="Additional\AREXStart\Properties\AssemblyInfo.cs" />
+    <None Include="Additional\AREXStart\Properties\Resources.Designer.cs" />
+    <None Include="Additional\AREXStart\Properties\Settings.Designer.cs" />
+    <None Include="Additional\AREXStart\Properties\Resources.resx" />
+    <None Include="Additional\AREXStart\Properties\Settings.settings" />
+    <None Include="Additional\buildevents.bat" />
+    <None Include="Additional\REXRevit.addin" />
+    <Resource Include="Resources\Other\Images\REX_logo.png" />
+    <Resource Include="Resources\Other\Images\TOOLBAR_calculate.png" />
+    <Resource Include="Resources\Other\Images\TOOLBAR_close.png" />
+    <Resource Include="Resources\Other\Images\TOOLBAR_open.png" />
+    <Resource Include="Resources\Other\Images\TOOLBAR_print.png" />
+    <Resource Include="Resources\Other\Images\TOOLBAR_save.png" />
+    <Resource Include="Resources\Other\Images\TOOLBAR_save_as.png" />
+    <Content Include="Configuration\REX.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configuration\REX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configuration\REX_small.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configuration\REX_tooltip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configuration\REX_revit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configuration\settings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="en-US\REX_revit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pl-PL\REX_revit.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Other\Images\TOOLBAR_rs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Resources\Dialogs\MainControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Dialogs\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Dialogs\SubControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Dialogs\UserControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exchange\%24safeprojectname%24.bundle\Contents\Module\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exchange\$safeprojectname$.bundle\Contents\REXAppStore.addin" />
+    <Content Include="Exchange\$safeprojectname$.bundle\PackageContents.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+if not exist "q:\exe.$(ConfigurationName)" goto InstalledSDK
+
+md "q:\exe.$(ConfigurationName)"
+md "q:\exe.$(ConfigurationName)\Modules"
+md "q:\exe.$(ConfigurationName)\Modules\$(ProjectName)"
+
+del "q:\exe.$(ConfigurationName)\Modules\$(ProjectName)\$(TargetFileName)"
+
+copy "$(TargetPath)" "q:\exe.$(ConfigurationName)\Modules\$(ProjectName)\$(TargetFileName)"
+copy "$(TargetDir)Interop.*.dll" "q:\exe.$(ConfigurationName)\Modules\$(ProjectName)\"
+
+goto END
+
+:InstalledSDK
+
+if exist "$(ProjectDir)Additional\buildevents.bat" call "$(ProjectDir)Additional\buildevents.bat"
+
+:END
+
+if exist "$(ProjectDir)Exchange" goto APPSTORE
+
+xcopy "$(ProjectDir)Additional\*.addin" "$RevitUserAddinsPath$" /S /R /K /V /I /F /C /Y
+
+if not exist "$(ProjectDir)Exchange" goto END1
+
+:APPSTORE
+
+xcopy "$(ProjectDir)Exchange" "$ApplicationPluginsPath$" /S /R /K /V /I /F /C /Y /E
+
+xcopy "$(TargetDir)*.*" "$ApplicationPluginsPath$$safeprojectname$.bundle\Contents\Module" /S /R /K /V /I /F /C /Y
+
+:END1
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

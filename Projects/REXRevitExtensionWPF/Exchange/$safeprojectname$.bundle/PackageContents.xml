@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" Name="$safeprojectname$" Description="$REXModuleDescription$" AppVersion="$REXSDKVersion$.0.0" ProductType="Application" HelpFile="./Contents/Resources/help.txt" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="REX" ProductCode="$AppStoreProductCode$" UpgradeCode="$AppStoreUpgradeCode$" Icon="./Contents/Module/Configuration/REX.png" OnlineDocumentation="">
+  <CompanyDetails Name="$REXVendorId$" Url="" Email="" Phone=" " />
+  <RuntimeRequirements OS="Win32|Win64" Platform="Revit Architecture|Revit Structure|Revit|Revit MEP" SeriesMin="R$REXSDKVersion$" SeriesMax="R$REXSDKVersion$" />
+  <Components>
+    <RuntimeRequirements OS="Win32|Win64" Platform="Revit" SeriesMin="R$REXSDKVersion$"/>
+    <ComponentEntry AppName="$safeprojectname$" ModuleName="./Contents/$safeprojectname$.addin"> </ComponentEntry>
+  </Components>
+</ApplicationPackage>

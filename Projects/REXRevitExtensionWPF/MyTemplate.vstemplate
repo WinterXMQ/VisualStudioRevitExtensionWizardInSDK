@@ -1,0 +1,139 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Revit Extension WPF</Name>
+    <Description>Revit Extension WPF</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Extension</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AREXTemplate.csproj" File="AREXTemplate.csproj" ReplaceParameters="true">
+      <Folder Name="Additional" TargetFolderName="Additional">
+       <Folder Name="AREXStart" TargetFolderName="AREXStart">
+             <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+             <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+             <ProjectItem ReplaceParameters="true" TargetFileName="AREXStart.csproj">AREXStart.csproj</ProjectItem>
+             <Folder Name="Properties" TargetFolderName="Properties">
+                 <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+                 <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+                 <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+                 <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+                 <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+             </Folder>  
+         </Folder>  
+        <ProjectItem ReplaceParameters="true" TargetFileName="AREXSetup.vdproj">AREXSetup.vdproj</ProjectItem>      
+        <ProjectItem ReplaceParameters="false" TargetFileName="buildevents.bat">buildevents.bat</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="REXRevit.addin">REXRevit.addin</ProjectItem>        
+      </Folder>
+      <Folder Name="Common" TargetFolderName="Common">
+        <Folder Name="Modules" TargetFolderName="Modules">
+          <Folder Name="Main" TargetFolderName="Main" />
+        </Folder>
+      </Folder>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="false" TargetFileName="REX.ico">REX.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="REX.png">REX.png</ProjectItem>          
+        <ProjectItem ReplaceParameters="false" TargetFileName="REX_small.png">REX_small.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="REX_tooltip.png">REX_tooltip.png</ProjectItem>        
+        <ProjectItem ReplaceParameters="true" TargetFileName="REX_revit.xml">REX_revit.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="settings.xml">settings.xml</ProjectItem>
+      </Folder>
+      <Folder Name="en-US" TargetFolderName="en-US">
+        <ProjectItem ReplaceParameters="true" TargetFileName="REX_revit.xml">REX_revit.xml</ProjectItem>
+      </Folder>
+      <Folder Name="Module" TargetFolderName="Module">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Application.cs">Application.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DirectRevitAccess.cs">DirectRevitAccess.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Foundation.cs">Foundation.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Main" TargetFolderName="Main">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Data.cs">Data.cs</ProjectItem>        
+        <ProjectItem ReplaceParameters="true" TargetFileName="Extension.cs">Extension.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.cs">Settings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Results.cs">Results.cs</ProjectItem>
+        <Folder Name="ASD" TargetFolderName="ASD">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExtensionASD.cs">ExtensionASD.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Revit" TargetFolderName="Revit">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExtensionRevit.cs">ExtensionRevit.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Robot" TargetFolderName="Robot">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExtensionRobot.cs">ExtensionRobot.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Civil3D" TargetFolderName="Civil3D">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExtensionCivil3D.cs">ExtensionCivil3D.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="pl-PL" TargetFolderName="pl-PL">
+        <ProjectItem ReplaceParameters="true" TargetFileName="REX_revit.xml">REX_revit.xml</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <Folder Name="Dialogs" TargetFolderName="Dialogs">
+          <ProjectItem ReplaceParameters="true" TargetFileName="MainControl.xaml">MainControl.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MainControl.xaml.cs">MainControl.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml">MainWindow.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml.cs">MainWindow.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SubControl.xaml">SubControl.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SubControl.xaml.cs">SubControl.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserControlView.xaml">UserControlView.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserControlView.xaml.cs">UserControlView.xaml.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Other" TargetFolderName="Other">
+          <Folder Name="Images" TargetFolderName="Images">
+            <ProjectItem ReplaceParameters="false" TargetFileName="REX_logo.png">REX_logo.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_calculate.png">TOOLBAR_calculate.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_close.png">TOOLBAR_close.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_help.png">TOOLBAR_help.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_info.png">TOOLBAR_info.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_open.png">TOOLBAR_open.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_print.png">TOOLBAR_print.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_rs.png">TOOLBAR_rs.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_save.png">TOOLBAR_save.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="TOOLBAR_save_as.png">TOOLBAR_save_as.png</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Strings" TargetFolderName="Strings">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Texts.resx">Texts.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Texts.Designer.cs">Texts.Designer.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Exchange" TargetFolderName="Exchange">
+        <Folder Name="$safeprojectname$.bundle" TargetFolderName="$safeprojectname$.bundle">
+          <Folder Name="Contents" TargetFolderName="Contents">
+            <Folder Name="Module" TargetFolderName="Module">
+            </Folder>    
+            <ProjectItem ReplaceParameters="true" TargetFileName="REXAppStore.addin">REXAppStore.addin</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PackageContents.xml">PackageContents.xml</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+    
+    <CustomParameters>
+      <CustomParameter Name="$REXSDKCopyright$" Value="2018"/>
+      <CustomParameter Name="$REXSDKVersion$" Value="2018"/>
+      <CustomParameter Name="$REXSDKTechnology$" Value="WPF"/>
+      <CustomParameter Name="$REXSDKQ$" Value=""/>
+      <CustomParameter Name="$REXSDKN$" Value=""/>
+      <CustomParameter Name="AREXTemplate" Value="$safeprojectname$"/>     
+      <CustomParameter Name="@REXRevit.addin" Value="$safeprojectname$.addin"/>
+      <CustomParameter Name="@REXAppStore.addin" Value="$safeprojectname$.addin"/>
+    </CustomParameters>
+  </TemplateContent>
+  
+ <WizardExtension>  
+      <Assembly>Autodesk.REX.Framework, Version=2018.0.0.0, Culture=neutral, PublicKeyToken=51e16e3b26b42eda</Assembly>
+      <FullClassName>Autodesk.REX.Framework.REXVisualStudioWizard</FullClassName>
+ </WizardExtension>
+ 
+</VSTemplate>

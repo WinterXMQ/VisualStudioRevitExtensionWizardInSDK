@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>$REXModuleFullPath$</Assembly>
+    <ClientId>$REXModuleId$</ClientId>
+    <FullClassName>REX.$safeprojectname$.DirectRevitAccess</FullClassName>
+    <Text>$REXModuleDescription$</Text>
+    <Description>$REXModuleFullDescription$</Description>
+$REXVisibilityMode$
+    <VendorId>$REXVendorId$</VendorId>
+    <VendorDescription>$REXVendorDescription$</VendorDescription>
+  </AddIn>
+</RevitAddIns>

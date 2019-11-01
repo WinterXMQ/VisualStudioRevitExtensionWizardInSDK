@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options product="REX" name="REX">
+	<option name="$REXModuleCategoryName$" description="$REXModuleCategoryDescription$" description_full="$REXModuleCategoryDescription$" version="" domain="" date="">
+		<option name="$safeprojectname$" description="$REXModuleDescription$" description_full="$REXModuleFullDescription$" version="0.5" domain="" date="" type="$REXUIType$">
+		  <data>
+			<data.run type="ASSEMBLY" path="$safeprojectname$" file="$safeprojectname$.dll" class="REX.$safeprojectname$.Application" direct_revit_class="REX.$safeprojectname$.DirectRevitAccess"/>
+		  </data>
+		</option>
+	</option>
+</options>

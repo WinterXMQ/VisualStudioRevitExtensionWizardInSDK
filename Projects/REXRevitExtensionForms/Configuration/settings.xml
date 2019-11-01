@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROXML version="1.0">
+  <header>
+    <contents type="configuration" version="1.5"/>
+    <product type="component" category="library" technology=".net" name="REX" />
+  </header>
+
+   <settings>
+       <control>
+           <!-- 
+              version name 
+              
+              name = "", "2017", ....
+           -->
+           <version name="$REXSDKVersion$"/>
+           
+           <!-- 
+              multi language architecture
+              
+              suported = "true", "false" 
+           -->
+           <languages supported="$REXLanguagesSupport$"/>
+           
+           <!-- 
+              user interface
+              
+              supported = "true", "false"
+           -->
+           <userinterface supported="$REXUserInterface$" form="modal"/>         
+           
+           <!-- 
+               context settings
+               
+               suported = "true", "false"
+               version = "", "2017", ....
+               optionlist = "subscription;..."
+               architecture = "x86", "x64"
+               parameters = "true", "false"
+               subname = "", some sub-product name
+               form = "modal" (""), "control", "non-modal"      
+            -->
+           <context name="Civil3D" supported="$REXCivil3DSupported$" form="$REXCivil3DForm$" version="" optionlist="" architecture="$REXProcessArchitecture$" parameters="$REXCivil3DSharedParameters$"/>
+           <context name="Robot"   supported="$REXRobotSupported$" form="$REXRobotForm$" version="" optionlist="" architecture="$REXProcessArchitecture$" parameters="$REXRobotSharedParameters$"/>
+           <context name="RCad"    supported="$REXASDSupported$" form="$REXASDForm$" version="" optionlist="" architecture="$REXProcessArchitecture$" parameters="$REXASDSharedParameters$"/>
+           
+           <context name="Revit" subname="Structure" optionlist="" supported="$REXRevitSTSupported$" version="" parameters="$REXRevitSharedParameters$"/>
+           <context name="Revit" subname="Architecture" optionlist="" supported="$REXRevitACSupported$" version="" parameters="$REXRevitSharedParameters$"/>
+           <context name="Revit" subname="MEP" optionlist="" supported="$REXRevitMEPSupported$" version="" parameters="$REXRevitSharedParameters$"/>
+           <context name="Revit" supported="true" form="$REXRevitForm$" version="" optionlist="" architecture="$REXProcessArchitecture$" parameters="$REXRevitSharedParameters$"/>
+       </control>
+   </settings>
+</ROXML>

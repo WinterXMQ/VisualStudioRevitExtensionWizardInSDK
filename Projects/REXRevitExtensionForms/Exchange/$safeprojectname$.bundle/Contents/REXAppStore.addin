@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>$safeprojectname$</Name>
+    <Assembly>Module\$projectname$.dll</Assembly>
+    <AddInId>$REXAppStoreGUID$</AddInId>
+    <FullClassName>REX.$safeprojectname$.DirectRevitExternalApplication</FullClassName>
+    <Text>$REXModuleDescription$</Text>
+    <Description>$REXModuleFullDescription$</Description>
+    <VendorId>$REXVendorId$</VendorId>
+    <VendorDescription>$REXVendorDescription$</VendorDescription>
+  </AddIn>
+</RevitAddIns>
