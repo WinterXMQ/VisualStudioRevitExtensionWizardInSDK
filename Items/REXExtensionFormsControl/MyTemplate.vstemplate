@@ -1,0 +1,15 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>ExtensionControl.cs</DefaultName>
+    <Name>Extension Control Forms</Name>
+    <Description>Extension Control Forms</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="UserControl" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">REXExtensionControl.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Designer.cs" ReplaceParameters="true">REXExtensionControl.Designer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

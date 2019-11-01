@@ -1,0 +1,15 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>ExtensionForm.cs</DefaultName>
+    <Name>Extension Form</Name>
+    <Description>Extension Form</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="Form" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">REXExtensionForm.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Designer.cs" ReplaceParameters="true">REXExtensionForm.Designer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
